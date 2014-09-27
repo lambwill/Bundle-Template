@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+   <ApplicationPackage
+      SchemaVersion="1.0"
+      AppVersion="1.0.0.0"
+      Author="WJLamb"
+      Name="Blank"
+      Icon="./Contents/Resources/Blank_32x32.bmp">
+   >
+  <CompanyDetails
+    Name="lambsoft"
+    Url="www.lambsoft.net"
+    Email="support@lambsoft.net"
+  />
+  <Components>
+    <RuntimeRequirements SeriesMin="R19"/>
+    <ComponentEntry
+      AppName="Blank"
+      ModuleName="./Contents/2013/Blank.dll"
+      AppDescription="WJL Plugin: Blank"
+      LoadOnAutoCADStartup="False"
+      LoadOnCommandInvocation="True"
+      LoadOnRequest="True">
+      <Commands GroupName="Blank">
+        <Command Local="Command1" Global="Command1" />
+        </Commands>
+    </ComponentEntry>
+    <ComponentEntry
+      AppName="Blank"
+      ModuleName="./Contents/Resources/Blank.cuix" />
+  </Components>
+  
+
+     <Components>
+       <RuntimeRequirements SeriesMin="R18" SeriesMax="R18.99"/>
+       <ComponentEntry
+         AppName="Blank"
+         ModuleName="./Contents/2012/Blank.dll"
+         AppDescription="WJL Plugin: Blank"
+         LoadOnAutoCADStartup="False"
+         LoadOnCommandInvocation="True"
+         LoadOnRequest="True">
+         <Commands GroupName="WJLPLUGINS">
+           <Command Local="Command1" Global="Command1" />
+           </Commands>
+       </ComponentEntry>
+       <ComponentEntry
+         AppName="Blank"
+         ModuleName="./Contents/Resources/Blank.cuix" />
+     </Components>
+     
+     
+  </ApplicationPackage>
